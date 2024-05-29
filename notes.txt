@@ -1,0 +1,5 @@
+https://github.com/aFarkas/lazysizes
+https://jakearchibald.com/2015/anatomy-of-responsive-images/
+https://alistapart.com/article/dao/
+https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/
+https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia
