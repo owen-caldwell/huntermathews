@@ -1,87 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <!-- Canonical link to help search engines -->
-        <link rel="canonical" href="/" />
-    
-        <!-- Basic meta elements -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name=robots content="index,follow">
-        <meta name="description" content="SHORT_DESCRIPTION">
-        <meta name="author" content="Jenna Ferayo">
-        <meta name='url' content='https://www.jennaferayo.com/' />
-        <!-- Enable responsiveness on mobile devices -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-        <!-- Open Graph metadata -->
-        <meta property="og:title" content="TITLE" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="url" />
-        <meta property="og:image" content="IMAGE_TO_USE" />
-        <meta property="og:description" content="DESCRIPTION">
-        <meta property="og:site_name" content="SITE_NAME" />
-        <title>
-            
-            home
-            
-        </title>
-        <link rel="icon" type="image/x-icon" href="">
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <!-- Canonical link to help search engines -->
+    <link rel="canonical" href="/" />
+
+    <!-- Basic meta elements -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name=robots content="index,follow">
+    <meta name="description" content="SHORT_DESCRIPTION">
+    <meta name="author" content="Jenna Ferayo">
+    <meta name='url' content='https://www.jennaferayo.com/' />
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="IMAGE_TO_USE" />
+    <meta property="og:description" content="DESCRIPTION">
+    <meta property="og:site_name" content="SITE_NAME" />
+    <title>
+        
+        DEV: REDIRECTER
+        
+    </title>
 </head>
 <body>
-    <div class="hamburger-menu"> <!-- hamburger menu -->
-        <table class="nav-table">
-            <tr>
-                <td><a href="link1">Portraits</a></td>
-                <td>01.22</td>
-            </tr>
-            <tr>
-                <td><a href="link2">Body as Form</a></td>
-                <td>02.22</td>
-            </tr>
-            <tr>
-                <td><a href="link3">Youth Nature</a></td>
-                <td>03.22</td>
-            </tr>
-            <tr>
-                <td><a href="link4">What Happens in the Night</a></td>
-                <td>04.22</td>
-            </tr>
-            <tr>
-                <td><a href="link5">The Time we Spend Together</a></td>
-                <td>05.22</td>
-            </tr>
-            <tr>
-                <td><a href="link6">Remy & Siena</a></td>
-                <td>06.22</td>
-            </tr>
-        </table>
-    </div>
-    <header>
-        <img src="wordmark.svg" id="wordmark">
-        <img id="hamburger"> 
-    </header>
-    <main> <!-- central image 5-portraits_320.webp -->
-        <img data-srcset="
-        large.jpg  1024w,
-        medium.jpg 640w,
-        small.jpg  320w"
-            data-sizes="auto"
-            data-src="small.jpg"
-            alt="A rad wolf"
-            class="lazyload" />
-    </main>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Venenatis urna cursus eget nunc scelerisque viverra. 
-        Est ante in nibh mauris cursus mattis molestie.
-    </p>
-    <footer>
-        <a>RESUME</a> / <a>CONTACT</a>
-    </footer>
-    <script src="lazysizes.min.js" async=""></script>
+    <script>
+            window.onload = function() {
+        if (window.innerWidth <= 720) {
+            window.location.href = "m-landing.html";
+        } else {
+            window.location.href = "page1.html";
+        }
+        } 
+    </script>
 </body>
 </html>

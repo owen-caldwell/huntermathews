@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Canonical link to help search engines -->
+    <link rel="canonical" href="/" />
+
+    <!-- Basic meta elements -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name=robots content="index,follow">
+    <meta name="description" content="SHORT_DESCRIPTION">
+    <meta name="author" content="Jenna Ferayo">
+    <meta name='url' content='https://www.jennaferayo.com/' />
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="IMAGE_TO_USE" />
+    <meta property="og:description" content="DESCRIPTION">
+    <meta property="og:site_name" content="SITE_NAME" />
+    <title>
+        
+        DEV: PAGE
+        
+    </title>
+    <!-- LIBRE BASKERVILLE [GOOGLE FONTS] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <div class="hamburger-menu"> <!-- hamburger menu -->
+        <table class="nav-table">
+            <tr class="active">
+                <td><a class="table-title-link" href="page1.html">Portraits</a></td>
+                <td class="table-date">01.22</td>
+            </tr>
+            <tr>
+                <td><a class="table-title-link" href="link2">Body as Form</a></td>
+                <td class="table-date">02.22</td>
+            </tr>
+            <tr>
+                <td><a class="table-title-link" href="link3">Youth Nature</a></td>
+                <td class="table-date">03.22</td>
+            </tr>
+            <tr>
+                <td><a class="table-title-link" href="link4">What Happens in the Night</a></td>
+                <td class="table-date">04.22</td>
+            </tr>
+            <tr>
+                <td><a class="table-title-link" href="link5">The Time we Spend Together</a></td>
+                <td class="table-date">05.22</td>
+            </tr>
+            <tr>
+                <td><a class="table-title-link" href="link6">Remy & Siena</a></td>
+                <td class="table-date">06.22</td>
+            </tr>
+        </table>
+        <p>contact info or social buttons</p>
+    </div>
+    <header>
+        <a href="index.html"><img src="wordmark.svg" id="wordmark"></a>
+        <img src="hamburger.svg" id="hamburger"> 
+    </header>
+    <main> <!-- central image 5-portraits_320.webp -->
+        <img srcset="
+        images/5-portraits_1024.webp  1024w,
+        images/5-portraits_640.webp 640w,
+        images/5-portraits_320.webp  320w"
+            sizes="auto"
+            src="images/5-portraits_320.webp"
+            alt="A rad wolf"
+            class="first-image gallery-image lazyload" />
+        <img srcset="
+        images/1-asketchbw_1024.webp  1024w,
+        images/1-asketchbw_640.webp 640w,
+        images/1-asketchbw_320.webp  320w"
+            sizes="auto"
+            src="images/1-asketchbw_320.webp"
+            alt="A rad wolf"
+            class="gallery-image lazyload" />
+        <img srcset="
+        images/5-portraits_1024.webp  1024w,
+        images/5-portraits_640.webp 640w,
+        images/5-portraits_320.webp  320w"
+            sizes="auto"
+            src="images/5-portraits_320.webp"
+            alt="A rad wolf"
+            class="gallery-image lazyload" />
+    </main>
+    <div class="desktop-nav">
+        <div class="desktop-nav-lcol">
+            <a href="index.html"><img src="wordmark.svg" id="wordmark"></a>
+            <table class="nav-table">
+                <tr class="active">
+                    <td><a class="table-title-link" href="page1.html">Portraits</a></td>
+                    <td class="table-date">01.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link2">Body as Form</a></td>
+                    <td class="table-date">02.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link3">Youth Nature</a></td>
+                    <td class="table-date">03.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link4">What Happens in the Night</a></td>
+                    <td class="table-date">04.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link5">The Time we Spend Together</a></td>
+                    <td class="table-date">05.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link6">Remy & Siena</a></td>
+                    <td class="table-date">06.22</td>
+                </tr>
+            </table>
+        </div>
+        <div class="desktop-nav-rcol">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Venenatis urna cursus eget nunc scelerisque viverra. 
+                Est ante in nibh mauris cursus mattis molestie.
+            </p>
+            <footer>
+                <a>RESUME</a> / <a>CONTACT</a>
+            </footer>
+        </div>
+    </div>
+    <script src="lazysizes/lazysizes.min.js" async=""></script>
+    <script src="inverteddragscroll.js"></script>
+</body>
+</html>
