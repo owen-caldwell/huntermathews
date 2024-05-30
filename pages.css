@@ -67,7 +67,6 @@ main {width:100%;}
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: scroll;
-        scroll-behavior: smooth;
         justify-content: left;
       }
     .desktop-nav-lcol {
