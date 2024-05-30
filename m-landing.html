@@ -69,8 +69,39 @@
         <p>contact info or social buttons</p>
     </div>
     <header>
-        <a href="index.html"><img src="wordmark.svg" id="wordmark"></a>
-        <img src="hamburger.svg" id="hamburger"> 
+        <div class="header-content">
+            <a href="index.html"><img src="wordmark.svg" id="wordmark"></a>
+            <img src="hamburger.svg" id="hamburger">
+        </div>
+        <div class="hamburger-menu" style="height: 0;"> <!-- hamburger menu -->
+            <table class="nav-table">
+                <tr class="active">
+                    <td><a class="table-title-link" href="page1.html">Portraits</a></td>
+                    <td class="table-date">01.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link2">Body as Form</a></td>
+                    <td class="table-date">02.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link3">Youth Nature</a></td>
+                    <td class="table-date">03.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link4">What Happens in the Night</a></td>
+                    <td class="table-date">04.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link5">The Time we Spend Together</a></td>
+                    <td class="table-date">05.22</td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link6">Remy & Siena</a></td>
+                    <td class="table-date">06.22</td>
+                </tr>
+            </table>
+            <p>contact info or social buttons</p>
+        </div> 
     </header>
     <main> <!-- central image 5-portraits_320.webp -->
         <img srcset="
@@ -92,5 +123,7 @@
         <a>RESUME</a> / <a>CONTACT</a>
     </footer>
     <script src="lazysizes.min.js" async=""></script>
+    <script src="hamburger.js"></script>
+    <script src="preventrightclick.js"></script>
 </body>
 </html>

@@ -24,21 +24,9 @@ main {width:100%;}
         grid-template-rows: 1fr .3fr;
         align-items: space-between;
     }
-    main::-webkit-scrollbar {
-        display: none;
-    }
-    main {
-        display: block;
-        flex-direction: row;
-        overflow: scroll;
-        width: 100%;
-        height: 100%;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
     .gallery-image {
+        max-width: 65vw;
+        max-height: 75vh;
         margin: 0 2em;
     }
     .desktop-nav {
@@ -50,6 +38,13 @@ main {width:100%;}
         height: 100%;
         grid-template-columns: 1fr 1fr;
     }
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: left;
+      }
     .desktop-nav-lcol {
         margin-right: 20%;
     }
