@@ -1,7 +1,7 @@
-const images = document.querySelectorAll('main img');
+let galleryImages = document.querySelectorAll('.gallery-image');
 
-images.forEach((img) => {
-    img.addEventListener('mousedown', function() {
+galleryImages.forEach((img) => {
+    img.addEventListener('mouseover', function() {
         if (window.matchMedia('(min-width: 1024px)').matches) {
             this.classList.add('pop');
             this.classList.remove('drop');

@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
 </head>
-<body>
+<body class="">
     <header>
         <div class="header-content">
             <a href="index.html"><img src="wordmark.svg" id="wordmark"></a>
@@ -70,6 +70,24 @@
             <p>contact info or social buttons</p>
         </div> 
     </header>
+    <div class="lightbox">
+        <img
+        class="lb-image" 
+        srcset=""
+        sizes="auto"
+        src=""
+        alt=""
+        />
+        <span class="lb-infocontainer">
+            <span class="lb-title">Title</span>
+            <span class="lb-selector">
+                <span class="lightbox-prev">prev</span>
+                /
+                <span class="lightbox-next">next</span>
+            </span>
+            <span class="lb-counter"></span>
+        </span>
+    </div>
     <main> <!-- central image 5-portraits_320.webp -->
         <img srcset="
         images/1-asketchbw_1024.webp  1024w,
@@ -142,5 +160,7 @@
     <script src="translatescrolling.js"></script>
     <script src="hamburger.js"></script>
     <script src="preventrightclick.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="popanimation.js"></script>
 </body>
 </html>
