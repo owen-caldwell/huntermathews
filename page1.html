@@ -139,7 +139,24 @@
         </div>
     </div>
     <script src="lazysizes/lazysizes.min.js" async=""></script>
-    <script src="inverteddragscroll.js"></script>
+    <script>
+        const main = document.querySelector('main');
+        const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+        if (viewportWidth > 1024) {
+            main.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                main.scrollLeft += e.deltaY;
+            });
+        }
+    </script>
+    <script>
+        document.querySelectorAll('img').forEach(img => {
+            img.oncontextmenu = function(e) {
+                e.preventDefault();
+            };
+        });
+    </script>
     <script>
     document.querySelector('#hamburger').addEventListener('click', function() {
         const menu = document.querySelector('.hamburger-menu');
