@@ -67,7 +67,9 @@ main {width: 80%;}
     margin-top: 2em;
     width: 100%;
 }
-.nav-table td {padding: .5em 0;}
+.nav-table td {
+    padding: .5em 0;
+}
 .table-title-link {
     color: black;
 }
@@ -111,7 +113,6 @@ footer {
     font-weight: 700;
     font-style: normal;
 }
-
 /* DESKTOP STYLE */
 @media (min-width: 1024px) {
     body {

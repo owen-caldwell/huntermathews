@@ -29,16 +29,26 @@ main {width:100%;}
     background-color: rgba(0, 0, 0, 0.65);
 }
 .lightbox-open {overflow: hidden;}
+.lb-selector {display: none;}
 .lb-infocontainer {
     display: flex;
+    width: 90vw;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
 }
 
 /* DESKTOP STYLE */
 @media (min-width: 1024px) {
+    .lb-infocontainer {
+        justify-content: space-around;
+    }
+    .lb-selector {display: block;}
+    .lightbox-next:hover, .lightbox-prev:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
     body {
         height: calc(100vh - 2.6em);
         display: grid;
@@ -61,7 +71,7 @@ main {width:100%;}
         display: none;
     }
     main {
-        height: 100%;
+        height: 90%;
         display: flex;
         scrollbar-width: none;
         flex-direction: row;
@@ -83,9 +93,10 @@ main {width:100%;}
         width: 800px;
         background-color: rgba(0, 0, 0, 0.45);
         margin: .7em;
-        padding: .3em;
+        padding: .5em;
+        border-radius: 10px;
     }
     .lb-image {
-        max-height: 80vh;
+        max-height: 95vh;
     }
 }

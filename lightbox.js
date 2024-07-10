@@ -4,6 +4,7 @@ let lightboxNext = document.querySelector('.lightbox-next');
 let lightboxImg = document.querySelector('.lb-image');
 let lightbox = document.querySelector('.lightbox');
 let lightboxIndex = document.querySelector('.lb-counter');
+let lightboxTitle = document.querySelector('.lb-title');
 let currentImageIndex;
 
 images.forEach((img, index) => {
@@ -34,7 +35,8 @@ function openLightbox() {
     lightboxImg.src = imgSrc;
     lightboxImg.srcset = imgSrcset;
     lightboxImg.alt = imgAlt;
-    lightboxIndex.textContent = `(${currentImageIndex + 1} of ${images.length})`;
+    lightboxIndex.textContent = `${currentImageIndex + 1} / ${images.length}`;
+    lightboxTitle.textContent = imgAlt;
     document.body.classList.add('lightbox-open');
     lightbox.style.display = 'flex';
 }
