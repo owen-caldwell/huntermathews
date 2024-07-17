@@ -5,6 +5,7 @@ let lightboxImg = document.querySelector('.lb-image');
 let lightbox = document.querySelector('.lightbox');
 let lightboxIndex = document.querySelector('.lb-counter');
 let lightboxTitle = document.querySelector('.lb-title');
+let lightboxExit = document.querySelector(".lightbox-exit");
 let currentImageIndex;
 
 images.forEach((img, index) => {
@@ -29,7 +30,6 @@ function openLightbox() {
     let imgSrc = img.src;
     let imgSrcset = img.srcset;
     let imgAlt = img.alt;
-
     let lightbox = document.querySelector('.lightbox');
     let lightboxImg = lightbox.querySelector(".lb-image");
     lightboxImg.src = imgSrc;
@@ -37,11 +37,22 @@ function openLightbox() {
     lightboxImg.alt = imgAlt;
     lightboxIndex.textContent = `${currentImageIndex + 1} / ${images.length}`;
     lightboxTitle.textContent = imgAlt;
+    lightboxImg.classList.add('fadein');
     document.body.classList.add('lightbox-open');
+    
     lightbox.style.display = 'flex';
 }
 
 lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg && e.target !== lightboxPrev && e.target !== lightboxNext) {
+        lightbox.style.display = 'none';
+        lightboxImg.src = "";
+        lightboxImg.srcset = "";
+        lightboxImg.alt = "";
+        document.body.classList.remove('lightbox-open');
+    }
+});
+lightboxExit.addEventListener('click', (e) => {
     if (e.target !== lightboxImg && e.target !== lightboxPrev && e.target !== lightboxNext) {
         lightbox.style.display = 'none';
         lightboxImg.src = "";

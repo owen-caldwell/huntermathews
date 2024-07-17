@@ -1,3 +1,4 @@
+// pop animation
 let galleryImages = document.querySelectorAll('.gallery-image');
 
 galleryImages.forEach((img) => {
