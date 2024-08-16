@@ -1,63 +1,53 @@
-let images = Array.from(document.querySelector('main').querySelectorAll('img'));
-let lightboxPrev = document.querySelector('.lightbox-prev');
-let lightboxNext = document.querySelector('.lightbox-next');
-let lightboxImg = document.querySelector('.lb-image');
-let lightbox = document.querySelector('.lightbox');
-let lightboxIndex = document.querySelector('.lb-counter');
-let lightboxTitle = document.querySelector('.lb-title');
-let lightboxExit = document.querySelector(".lightbox-exit");
-let currentImageIndex;
+document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const images = document.querySelectorAll('image-wrapper img');
+    let currentIndex = 0;
 
-images.forEach((img, index) => {
-    img.addEventListener('click', () => {
-        currentImageIndex = index;
-        setTimeout(openLightbox, 250);
+    function openLightbox(index) {
+        currentIndex = index;
+        lightbox.style.display = 'flex';
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    function showPrevImage() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    function showNextImage() {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => openLightbox(index));
     });
-});
 
-lightboxPrev.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    setTimeout(openLightbox, 250);
-});
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
 
-lightboxNext.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    setTimeout(openLightbox, 250);
-});
+    window.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
 
-function openLightbox() {
-    let img = images[currentImageIndex];
-    let imgSrc = img.src;
-    let imgSrcset = img.srcset;
-    let imgAlt = img.alt;
-    let lightbox = document.querySelector('.lightbox');
-    let lightboxImg = lightbox.querySelector(".lb-image");
-    lightboxImg.src = imgSrc;
-    lightboxImg.srcset = imgSrcset;
-    lightboxImg.alt = imgAlt;
-    lightboxIndex.textContent = `${currentImageIndex + 1} / ${images.length}`;
-    lightboxTitle.textContent = imgAlt;
-    lightboxImg.classList.add('fadein');
-    document.body.classList.add('lightbox-open');
-    
-    lightbox.style.display = 'flex';
-}
-
-lightbox.addEventListener('click', (e) => {
-    if (e.target !== lightboxImg && e.target !== lightboxPrev && e.target !== lightboxNext) {
-        lightbox.style.display = 'none';
-        lightboxImg.src = "";
-        lightboxImg.srcset = "";
-        lightboxImg.alt = "";
-        document.body.classList.remove('lightbox-open');
-    }
-});
-lightboxExit.addEventListener('click', (e) => {
-    if (e.target !== lightboxImg && e.target !== lightboxPrev && e.target !== lightboxNext) {
-        lightbox.style.display = 'none';
-        lightboxImg.src = "";
-        lightboxImg.srcset = "";
-        lightboxImg.alt = "";
-        document.body.classList.remove('lightbox-open');
-    }
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeLightbox();
+        } else if (event.key === 'ArrowLeft') {
+            showPrevImage();
+        } else if (event.key === 'ArrowRight') {
+            showNextImage();
+        }
+    });
 });

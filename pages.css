@@ -26,7 +26,7 @@ main {width:100%;}
 }
 .desktop-nav {display: none;}
 .lightbox {
-    z-index: 3;
+    z-index: 5;
     display: none;
     position: fixed;
     flex-direction: column;
@@ -43,7 +43,6 @@ main {width:100%;}
     top: 10px;
 }
 .lightbox-open {overflow: hidden;}
-.lb-selector {display: none;}
 .lb-infocontainer {
     display: flex;
     width: 90vw;
@@ -58,7 +57,13 @@ main {width:100%;}
     .lb-infocontainer {
         justify-content: space-around;
     }
-    .lb-selector {display: block;}
+    .lb-selector {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 0, 0, 0.268);
+    }
     .lightbox-next:hover, .lightbox-prev:hover {
         cursor: pointer;
         text-decoration: underline;
@@ -79,7 +84,7 @@ main {width:100%;}
         padding: 1em 1em 0 1em;
         width: 1000px;
         height: 100%;
-        grid-template-columns: 1fr 1.2fr;
+        grid-template-columns: .7fr .5fr 1.2fr;
     }
     main::-webkit-scrollbar {
         display: none;
@@ -93,8 +98,14 @@ main {width:100%;}
         overflow-x: scroll;
         justify-content: left;
       }
+    .desktop-nav-lcol, .desktop-nav-mcol, .desktop-nav-rcol {
+        z-index: 3;
+    }
     .desktop-nav-lcol {
         margin-right: 20%;
+    }
+    .desktop-nav-mcol {
+        margin-top: 32px;
     }
     .desktop-nav-rcol {
         margin: auto;

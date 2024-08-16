@@ -9,8 +9,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name=robots content="index,follow">
     <meta name="description" content="SHORT_DESCRIPTION">
-    <meta name="author" content="Jenna Ferayo">
-    <meta name='url' content='https://www.jennaferayo.com/' />
+    <meta name="author" content="Hunter Mathews">
+    <meta name='url' content='https://www.huntkats.com/' />
     <!-- Enable responsiveness on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <!-- Open Graph metadata -->
@@ -22,9 +22,11 @@
     <meta property="og:site_name" content="SITE_NAME" />
     <title>
         
-        DEV: PAGE [PRELAUNCH BUILD]
+        NEW YORK TEST PAGE
         
     </title>
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/kag1hdb.css">
     <!-- LIBRE BASKERVILLE [GOOGLE FONTS] -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +35,14 @@
     <!-- <link rel="icon" type="image/x-icon" href=""> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
+    <script defer src="hamburger.js"></script>
+    <script defer src="preventrightclick.js"></script>
+    <script defer src="lightbox.js"></script>
+    <script defer src="buttonoverlay.js"></script>
+    <script defer src="horizontalscroll.js"></script>
+    <script defer src="animation.js"></script>
 </head>
-<body class="">
+<body>
     <header>
         <div class="header-content">
             <a href="index.html"><img src="wordmark.webp" id="wordmark"></a> <!-- OPTIMIZE LATER -->
@@ -43,28 +51,40 @@
         <div class="hamburger-menu" style="height: 0;"> <!-- hamburger menu -->
             <table class="nav-table">
                 <tr class="active">
-                    <td><a class="table-title-link" href="page1.html">Portraits</a></td>
-                    <td class="table-date">01.22</td>
+                    <td><a class="table-title-link" href="page1.html">Stay Naked</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link2">Body as Form</a></td>
-                    <td class="table-date">02.22</td>
+                    <td><a class="table-title-link" href="link">What Happens In The Night</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link3">Youth Nature</a></td>
-                    <td class="table-date">03.22</td>
+                    <td><a class="table-title-link" href="link">Wet, Hot, and Sweaty</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link4">What Happens in the Night</a></td>
-                    <td class="table-date">04.22</td>
+                    <td><a class="table-title-link" href="link">The Time We Spend Together</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link5">The Time we Spend Together</a></td>
-                    <td class="table-date">05.22</td>
+                    <td><a class="table-title-link" href="link">Landscapes</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link6">Remy & Siena</a></td>
-                    <td class="table-date">06.22</td>
+                    <td><a class="table-title-link" href="link">Animals</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Camping</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Remy & Siena</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">NYC</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Czech Republic</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">California</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Landscapes</a></td>
                 </tr>
             </table>
         </div> 
@@ -76,7 +96,7 @@
             <button class="lightbox-next"></button>
         </span>
         <img
-        class="lb-image" 
+        class="lb-image"
         srcset=""
         src=""
         alt=""
@@ -87,101 +107,351 @@
         </span>
     </div>
     <main> <!-- central image 5-portraits_320.webp -- ADD SIZES ATTRI --> 
-        <img srcset="
-            images/1-shellofaman_1024.webp  1024w,
-            images/1-shellofaman_640.webp 640w,
-            images/1-shellofaman_320.webp  320w"
-            src="images/1-shellofaman_320.webp"
-            alt=""
-            class="first-image gallery-image " />
-        <img srcset="
-            images/2-shellofaman_1024.webp  1024w,
-            images/2-shellofaman_640.webp 640w,
-            images/2-shellofaman_320.webp  320w"
-            src="images/2-shellofaman_320.webp"
-            alt=""
-            class="gallery-image " />
-        <img srcset="
-            images/3-shellofaman_1024.webp  1024w,
-            images/3-shellofaman_640.webp 640w,
-            images/3-shellofaman_320.webp  320w"
-            src="images/3-shellofaman_320.webp"
-            alt=""
-            class="gallery-image " />
-        <img srcset="
-            images/4-shellofaman_1024.webp  1024w,
-            images/4-shellofaman_640.webp 640w,
-            images/4-shellofaman_320.webp  320w"
-            src="images/4-shellofaman_320.webp"
-            alt=""
-            class="gallery-image " />
-        <img srcset="
-            images/5-shellofaman_1024.webp  1024w,
-            images/5-shellofaman_640.webp 640w,
-            images/5-shellofaman_320.webp  320w"
-            src="images/5-shellofaman_320.webp"
-            alt=""
-            class="gallery-image " />
-
-        <img srcset="
-            images/7-shellofaman_1024.webp  1024w,
-            images/7-shellofaman_640.webp 640w,
-            images/7-shellofaman_320.webp  320w"
-            src="images/7-shellofaman_320.webp"
-            alt=""
-            class="gallery-image " />
+        <button-overlay>
+            <left-button></left-button>
+            <right-button></right-button>
+        </button-overlay>
+        <gal-container>
+            <image-wrapper class="grid">
+            <grid-container>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_1_1500.webp  1500w,
+                        dump/newyork_1_1080.webp 1080w,
+                        dump/newyork_1_700.webp 700w"
+                        src="dump/newyork_1_1500.webp"
+                        alt=""/>
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_2_1500.webp  1500w,
+                        dump/newyork_2_1080.webp 1080w,
+                        dump/newyork_2_700.webp 700w"
+                        src="dump/newyork_2_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                <img srcset="
+                    dump/newyork_3_1500.webp  1500w,
+                    dump/newyork_3_1080.webp 1080w,
+                    dump/newyork_3_700.webp 700w"
+                    src="dump/newyork_3_1500.webp"
+                    alt=""/>
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_4_1500.webp  1500w,
+                        dump/newyork_4_1080.webp 1080w,
+                        dump/newyork_4_700.webp 700w"
+                        src="dump/newyork_4_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                <img srcset="
+                    dump/newyork_5_1500.webp  1500w,
+                    dump/newyork_5_1080.webp 1080w,
+                    dump/newyork_5_700.webp 700w"
+                    src="dump/newyork_5_1500.webp"
+                    alt=""
+                />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_6_1500.webp  1500w,
+                        dump/newyork_6_1080.webp 1080w,
+                        dump/newyork_6_700.webp 700w"
+                        src="dump/newyork_6_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_7_1500.webp  1500w,
+                        dump/newyork_7_1080.webp 1080w,
+                        dump/newyork_7_700.webp 700w"
+                        src="dump/newyork_7_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_8_1500.webp  1500w,
+                        dump/newyork_8_1080.webp 1080w,
+                        dump/newyork_8_700.webp 700w"
+                        src="dump/newyork_8_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_9_1500.webp  1500w,
+                        dump/newyork_9_1080.webp 1080w,
+                        dump/newyork_9_700.webp 700w"
+                        src="dump/newyork_9_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_10_1500.webp  1500w,
+                        dump/newyork_10_1080.webp 1080w,
+                        dump/newyork_10_700.webp 700w"
+                        src="dump/newyork_10_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_11_1500.webp  1500w,
+                        dump/newyork_11_1080.webp 1080w,
+                        dump/newyork_11_700.webp 700w"
+                        src="dump/newyork_11_1500.webp"
+                        alt=""
+                    /> 
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_12_1500.webp  1500w,
+                        dump/newyork_12_1080.webp 1080w,
+                        dump/newyork_12_700.webp 700w"
+                        src="dump/newyork_12_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_13_1500.webp  1500w,
+                        dump/newyork_13_1080.webp 1080w,
+                        dump/newyork_13_700.webp 700w"
+                        src="dump/newyork_13_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                <img srcset="
+                    dump/newyork_14_1500.webp  1500w,
+                    dump/newyork_14_1080.webp 1080w,
+                    dump/newyork_14_700.webp 700w"
+                    src="dump/newyork_14_1500.webp"
+                    alt=""
+                />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_15_1500.webp  1500w,
+                        dump/newyork_15_1080.webp 1080w,
+                        dump/newyork_15_700.webp 700w"
+                        src="dump/newyork_15_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_16_1500.webp  1500w,
+                        dump/newyork_16_1080.webp 1080w,
+                        dump/newyork_16_700.webp 700w"
+                        src="dump/newyork_16_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_17_1500.webp  1500w,
+                        dump/newyork_17_1080.webp 1080w,
+                        dump/newyork_17_700.webp 700w"
+                        src="dump/newyork_17_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_18_1500.webp  1500w,
+                        dump/newyork_18_1080.webp 1080w,
+                        dump/newyork_18_700.webp 700w"
+                        src="dump/newyork_18_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_19_1500.webp  1500w,
+                        dump/newyork_19_1080.webp 1080w,
+                        dump/newyork_19_700.webp 700w"
+                        src="dump/newyork_19_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_20_1500.webp  1500w,
+                        dump/newyork_20_1080.webp 1080w,
+                        dump/newyork_20_700.webp 700w"
+                        src="dump/newyork_20_1500.webp"
+                        alt=""
+                    /> 
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_21_1500.webp  1500w,
+                        dump/newyork_21_1080.webp 1080w,
+                        dump/newyork_21_700.webp 700w"
+                        src="dump/newyork_21_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_22_1500.webp  1500w,
+                        dump/newyork_22_1080.webp 1080w,
+                        dump/newyork_22_700.webp 700w"
+                        src="dump/newyork_22_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_23_1500.webp  1500w,
+                        dump/newyork_23_1080.webp 1080w,
+                        dump/newyork_23_700.webp 700w"
+                        src="dump/newyork_23_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_24_1500.webp  1500w,
+                        dump/newyork_24_1080.webp 1080w,
+                        dump/newyork_24_700.webp 700w"
+                        src="dump/newyork_24_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_25_1500.webp  1500w,
+                        dump/newyork_25_1080.webp 1080w,
+                        dump/newyork_25_700.webp 700w"
+                        src="dump/newyork_25_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_26_1500.webp  1500w,
+                        dump/newyork_26_1080.webp 1080w,
+                        dump/newyork_26_700.webp 700w"
+                        src="dump/newyork_26_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_27_1500.webp  1500w,
+                        dump/newyork_27_1080.webp 1080w,
+                        dump/newyork_27_700.webp 700w"
+                        src="dump/newyork_27_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_28_1500.webp  1500w,
+                        dump/newyork_28_1080.webp 1080w,
+                        dump/newyork_28_700.webp 700w"
+                        src="dump/newyork_28_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_29_1500.webp  1500w,
+                        dump/newyork_29_1080.webp 1080w,
+                        dump/newyork_29_700.webp 700w"
+                        src="dump/newyork_29_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+                <img-slide>
+                    <img srcset="
+                        dump/newyork_30_1500.webp  1500w,
+                        dump/newyork_30_1080.webp 1080w,
+                        dump/newyork_30_700.webp 700w"
+                        src="dump/newyork_30_1500.webp"
+                        alt=""
+                    />
+                </img-slide>
+            </grid-container>
+            </image-wrapper>
+        </gal-container>
+        <div id="lightbox" class="lightbox">
+            <close-btn class="close"><span>&times;</span></close-btn>
+            <img class="lightbox-content" id="lightbox-img">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
     </main>
     <div class="desktop-nav">
         <div class="desktop-nav-lcol">
             <a href="index.html"><img src="wordmark.webp" id="wordmark"></a>
-            <table class="nav-table">
+            <table class="nav-table asterisk-regular">
                 <tr class="active">
-                    <td><a class="table-title-link" href="page1.html">Portraits</a></td>
-                    <td class="table-date">01.22</td>
+                    <td><a class="table-title-link" href="page1.html">Stay Naked</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link2">Body as Form</a></td>
-                    <td class="table-date">02.22</td>
+                    <td><a class="table-title-link" href="link">What Happens In The Night</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link3">Youth Nature</a></td>
-                    <td class="table-date">03.22</td>
+                    <td><a class="table-title-link" href="link">Wet, Hot, and Sweaty</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link4">What Happens in the Night</a></td>
-                    <td class="table-date">04.22</td>
+                    <td><a class="table-title-link" href="link">The Time We Spend Together</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link5">The Time we Spend Together</a></td>
-                    <td class="table-date">05.22</td>
+                    <td><a class="table-title-link" href="link">Landscapes</a></td>
                 </tr>
                 <tr>
-                    <td><a class="table-title-link" href="link6">Remy & Siena</a></td>
-                    <td class="table-date">06.22</td>
+                    <td><a class="table-title-link" href="link">Animals</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Camping</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Remy & Siena</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="desktop-nav-mcol">
+            <table class="nav-table asterisk-regular">
+                <tr>
+                    <td><a class="table-title-link" href="link">NYC</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Czech Republic</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">California</a></td>
+                </tr>
+                <tr>
+                    <td><a class="table-title-link" href="link">Landscapes</a></td>
                 </tr>
             </table>
         </div>
         <div class="desktop-nav-rcol">
-            <p>
-                Hunter Mathews is a New York-based fine art documentary analog 
-                photographer who specializes in the nude and environment. Mathews 
-                draws from memory, the natural world, and paintings. 
-                She utilizes darkroom techniques and other archival 
-                processes to reinforce her vision.  She captures the raw beauty she 
-                experiences, as she experiences it, taking the viewer on a journey 
-                through her life: the mundane and extraordinary. She sees her life 
-                through a lens and records it as she lives, shot by shot, producing 
-                a sequential series of works. 
+            <p class="asterisk-regular">
+                Hunter Mathews is a New York-based fine art documentary analog photographer who specializes in form and light. 
+                Mathews draws from memory, the natural world, and paintings. She utilizes darkroom techniques and other archival 
+                processes to reinforce her vision. She captures the raw beauty she experiences, as she experiences it, 
+                taking the viewer on a journey through her life: the mundane and extraordinary. She sees her life through a lens 
+                and records it as she lives, shot by shot, producing a sequential series of works. 	
+
             </p>
-            <footer>
-                <a>RESUME</a> / <a>CONTACT</a>
+            <footer class="asterisk-regular">
+                Contact hunttkats@gmail.com<br>
+                <a href="CV.pdf">CV</a>
             </footer>
         </div>
     </div>
-    <script src="translatescrolling.js"></script>
-    <script src="hamburger.js"></script>
-    <script src="preventrightclick.js"></script>
-    <script src="lightbox.js"></script>
-    <script src="animation.js"></script>
 </body>
 </html>
