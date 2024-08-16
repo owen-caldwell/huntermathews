@@ -3,7 +3,7 @@ document.querySelector('#hamburger').addEventListener('click', function() {
     const hamburger = document.querySelector('#hamburger');
 
     if (menu.style.height === '0px' || menu.style.height === '') {
-        menu.style.height = '80vh';
+        menu.style.height = '100vh';
         hamburger.src = 'close.svg';
     } else {
         menu.style.height = '0px';

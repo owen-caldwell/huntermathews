@@ -126,6 +126,11 @@ footer {
     font-weight: 700;
     font-style: normal;
 }
+grid-container>img-slide>img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
 
 /* DESKTOP STYLE */
 @media (min-width: 1024px) {
