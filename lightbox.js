@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.querySelector('.prev');
     const nextBtn = document.querySelector('.next');
     const images = document.querySelectorAll('image-wrapper img');
+    console.log(images);
     let currentIndex = 0;
 
     function openLightbox(index) {
