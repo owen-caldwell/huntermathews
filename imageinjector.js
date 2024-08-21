@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let imageParent = document.querySelector("grid-container");
     if (!imageParent) {
-        let imageParent = document.querySelector("image-wrapper");
+        imageParent = document.querySelector("image-wrapper");
     }
     const baseName = imageParent.getAttribute("data-imgname");
     const imageCount = imageParent.getAttribute("data-imgcount"); // Number of images
