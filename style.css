@@ -122,11 +122,14 @@ p {
 footer {
     width: 100%;
 }
+footer>a {
+    color: white;
+}
 .active {
     font-weight: 700;
     font-style: normal;
 }
-grid-container>img-slide>img {
+img-slide>img {
     width: 100%;
     height: auto;
     margin: 1em 0;
@@ -185,7 +188,7 @@ grid-container>img-slide>img {
         display: flex;
         justify-content: center;
         height: 30vh;
-        width: 22vh;
+        max-width: 22vh;
         margin: 1em;
     };
     button-overlay {
