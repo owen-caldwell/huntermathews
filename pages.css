@@ -54,6 +54,18 @@ main {width:100%;}
 
 /* DESKTOP STYLE */
 @media (min-width: 1024px) {
+    .lightbox {
+        z-index: 5;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vw + 1.3em);
+        height: 100vh;
+        left: -1.3em;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
     .lb-infocontainer {
         justify-content: space-around;
     }
