@@ -176,7 +176,7 @@ img-slide>img {
         position: relative;
         flex-shrink: 0;
         width: auto;
-        height: 55vh;
+        max-height: 55vh;
         margin: 1em 1em 0 1em;
     }
     grid-container>img-slide>img {
@@ -187,7 +187,6 @@ img-slide>img {
     grid-container>img-slide {
         display: flex;
         justify-content: center;
-        height: 30vh;
         max-width: 22vh;
         margin: 1em;
     };
@@ -208,7 +207,7 @@ img-slide>img {
         height: 100%;
         width: 12%;
         font-size: 2em;
-        cursor: url(left-arrow.svg) 0 0, w-resize;
+        cursor: w-resize;
     }
     
     right-button {
@@ -220,7 +219,7 @@ img-slide>img {
         width: 12%;
         color: white;
         font-size: 2em;
-        cursor: url(right-arrow.svg) 0 0, e-resize;
+        cursor: e-resize;
     }
     img-caption {
         margin-left: 1em;
@@ -238,13 +237,6 @@ img-slide>img {
         height: 100%;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    .lightbox-content {
-        margin: auto;
-        display: block;
-        max-width: 90vw;
-        max-height: 90vh;
     }
     
     close-btn {
@@ -269,28 +261,6 @@ img-slide>img {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;
-    }
-    
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-size: 20px;
-        transition: 0.6s ease;
-        user-select: none;
-    }
-    
-    .prev {
-        left: 0;
-    }
-    
-    .next {
-        right: 0;
     }
     /* Animation styles */
     @keyframes slideInFromRight {

@@ -25,17 +25,44 @@ main {width:100%;}
     max-height: 100%;
 }
 .desktop-nav {display: none;}
+.lightbox-content {
+    width: 90%;
+    height: auto;
+}
+close-btn {
+    display: none;
+}
+.prev, .next {
+    position: absolute;
+}
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 1.5%;
+    height: 50%;
+    width: 15%;
+}
+.prev {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    left: 1.5%;
+    height: 50%;
+    width: 15%;
+}
 .lightbox {
     z-index: 5;
+    width: 100%;
     display: none;
     position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(100vw + 1.3em);
     height: 100vh;
-    left: -1.3em;
-    background-color: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 .lightbox-exit {
     position: absolute;
@@ -61,10 +88,37 @@ main {width:100%;}
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: calc(100vw + 1.3em);
         height: 100vh;
-        left: -1.3em;
         background-color: rgba(0, 0, 0, 0.65);
+    }
+    .lightbox-content {
+        margin: auto;
+        display: block;
+        max-width: 90vw;
+        width: auto;
+        max-height: 90vh;
+    }
+    .prev,
+    .next {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        height: auto;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-size: 20px;
+        user-select: none;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
     }
     .lb-infocontainer {
         justify-content: space-around;
